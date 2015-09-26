@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "rootDir": "src"
+  },
+  "files": [
+    "typings/tsd.d.ts",
+    "node_modules/immutable/dist/immutable.d.ts",
+    "src/app.tsx"
+  ]
+}
