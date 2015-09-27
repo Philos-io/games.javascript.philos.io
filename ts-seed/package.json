@@ -1,0 +1,44 @@
+{
+  "name": "bind-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && jest",
+    "postinstall": "tsd install",
+    "lint": "tslint src/**/*.ts",
+    "dev": "webpack-dev-server --watch",
+    "build": "webpack"
+  },
+  "author": "",
+  "private": true,
+  "dependencies": {
+    "eventemitter3": "^1.1.1",
+    "flux": "^2.1.1",
+    "immutable": "^3.7.5",
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "jest-cli": "^0.5.2",
+    "react-tools": "^0.13.3",
+    "ts-loader": "^0.5.4",
+    "tsd": "^0.6.4",
+    "tslint": "^2.4.5",
+    "typescript": "next",
+    "webpack": "^1.12.1",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "jest": {
+    "scriptPreprocessor": "./tools/jestPreprocessor.js",
+    "unmockedModulePathPatterns": [
+      "react"
+    ],
+    "testPathDirs": [
+      "./src"
+    ],
+    "testFileExtensions": [
+      "ts",
+      "tsx"
+    ]
+  }
+}
